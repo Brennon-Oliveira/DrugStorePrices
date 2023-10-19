@@ -28,8 +28,10 @@ var app = builder.Build();
 app.MapControllers();
 
 #region App Swagger configuration
+
 app.UseSwagger();
 app.UseSwaggerUI();
+
 #endregion
 
 #region Error handling configuration
