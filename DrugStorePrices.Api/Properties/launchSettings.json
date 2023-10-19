@@ -3,11 +3,12 @@
     "http": {
       "commandName": "Project",
       "launchBrowser": true,
+      "launchUrl": "http://localhost:4200",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "http://localhost:5255"
+      "applicationUrl": ""
     },
     "https": {
       "commandName": "Project",

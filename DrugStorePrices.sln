@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrugStorePrices.Domain", "D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrugStorePrices.CrossCutting.IoC", "DrugStorePrices.IoC\DrugStorePrices.CrossCutting.IoC.csproj", "{3001F424-81FB-4CE7-B5D3-5F2B2CA5690B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrugStorePrices.CrossCutting.ServiceLocator", "DrugStorePrices.CrossCutting.ServiceLocator\DrugStorePrices.CrossCutting.ServiceLocator.csproj", "{8DE8048E-DC1B-4585-8218-8E50FEDA9128}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrugStorePrices.CrossCutting.ServiceLocator", "DrugStorePrices.CrossCutting.ServiceLocator\DrugStorePrices.CrossCutting.ServiceLocator.csproj", "{8DE8048E-DC1B-4585-8218-8E50FEDA9128}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrugStorePrices.CrossCutting.Mapper", "DrugStorePrices.CrossCutting.Mapper\DrugStorePrices.CrossCutting.Mapper.csproj", "{5E8FD25F-591C-4691-AF53-C763E5F4A22A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrugStorePrices.CrossCutting.Mapper", "DrugStorePrices.CrossCutting.Mapper\DrugStorePrices.CrossCutting.Mapper.csproj", "{5E8FD25F-591C-4691-AF53-C763E5F4A22A}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "DrugStorePrices.Front", "DrugStorePrices.Front\DrugStorePrices.Front.esproj", "{0C42E6FD-B28E-4341-815E-455657CF8F97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,12 @@ Global
 		{5E8FD25F-591C-4691-AF53-C763E5F4A22A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E8FD25F-591C-4691-AF53-C763E5F4A22A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E8FD25F-591C-4691-AF53-C763E5F4A22A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C42E6FD-B28E-4341-815E-455657CF8F97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C42E6FD-B28E-4341-815E-455657CF8F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C42E6FD-B28E-4341-815E-455657CF8F97}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0C42E6FD-B28E-4341-815E-455657CF8F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C42E6FD-B28E-4341-815E-455657CF8F97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C42E6FD-B28E-4341-815E-455657CF8F97}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
