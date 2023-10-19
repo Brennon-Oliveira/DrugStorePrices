@@ -1,9 +1,9 @@
-﻿using DrugStorePrices.Api.Interfaces.Services;
-using DrugStorePrices.Api.Models;
-using DrugStorePrices.Api.ViewModels.DrugStore;
+﻿
+using DrugStorePrices.Application.Interfaces.Repositories;
+using DrugStorePrices.Application.ViewModels.DrougStore;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DrugStorePrices.Api.Controllers
+namespace DrugStorePrices.Domain.Controllers
 {
     [Route("DrugStore")]
     [ApiController]
@@ -27,25 +27,37 @@ namespace DrugStorePrices.Api.Controllers
         [HttpGet("{id}")]
         public IActionResult GetById(Guid id)
         {
-            throw new NotImplementedException();
+            return new OkObjectResult(_drugStoreService.GetById(id));
         }
 
         [HttpPost]
         public IActionResult Create(DrugStoreCreateViewModel drugStore)
         {
-            return new OkObjectResult(_drugStoreService.Create(drugStore));
+            return new OkObjectResult(new
+            {
+                Id = _drugStoreService.Create(drugStore),
+                Message = "Farmácia criada com sucesso!"
+            });
         }
 
         [HttpPut]
-        public IActionResult Update(DrugStore drugStore)
+        public IActionResult Update(DrugStoreUpdateViewModel drugStore)
         {
-            throw new NotImplementedException();
+            _drugStoreService.Update(drugStore);
+            return new OkObjectResult(new
+            {
+                Message = "Farmácia atualizada com sucesso!"
+            });
         }
 
         [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {
-            throw new NotImplementedException();
+            _drugStoreService.Delete(id);
+            return new OkObjectResult(new
+            {
+                Message = "Farmácia deletada com sucesso!"
+            });
         }   
     }
 }

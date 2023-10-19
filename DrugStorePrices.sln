@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrugStorePrices.Api", "DrugStorePrices.Api\DrugStorePrices.Api.csproj", "{EF9FB6C6-E6DD-4E8B-AE1C-202D26AFE2C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrugStorePrices.Api", "DrugStorePrices.Api\DrugStorePrices.Api.csproj", "{EF9FB6C6-E6DD-4E8B-AE1C-202D26AFE2C3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8DE8048E-DC1B-4585-8218-8E50FEDA9128} = {8DE8048E-DC1B-4585-8218-8E50FEDA9128}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrugStorePrices.Application", "DrugStorePrices.Application\DrugStorePrices.Application.csproj", "{816F12A1-CD68-4734-9FBE-A2BD6C4D6F20}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrugStorePrices.Infra.Data", "DrugStorePrices.Infra.Data\DrugStorePrices.Infra.Data.csproj", "{2F7FD2CF-367C-4A6A-962B-9F91A0389C22}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrugStorePrices.Domain", "DrugStorePrices.Domain\DrugStorePrices.Domain.csproj", "{2656C07C-782E-4B83-B618-A9BE243E5EB6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8DE8048E-DC1B-4585-8218-8E50FEDA9128} = {8DE8048E-DC1B-4585-8218-8E50FEDA9128}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrugStorePrices.CrossCutting.IoC", "DrugStorePrices.IoC\DrugStorePrices.CrossCutting.IoC.csproj", "{3001F424-81FB-4CE7-B5D3-5F2B2CA5690B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrugStorePrices.CrossCutting.ServiceLocator", "DrugStorePrices.CrossCutting.ServiceLocator\DrugStorePrices.CrossCutting.ServiceLocator.csproj", "{8DE8048E-DC1B-4585-8218-8E50FEDA9128}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrugStorePrices.CrossCutting.Mapper", "DrugStorePrices.CrossCutting.Mapper\DrugStorePrices.CrossCutting.Mapper.csproj", "{5E8FD25F-591C-4691-AF53-C763E5F4A22A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +33,30 @@ Global
 		{EF9FB6C6-E6DD-4E8B-AE1C-202D26AFE2C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF9FB6C6-E6DD-4E8B-AE1C-202D26AFE2C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF9FB6C6-E6DD-4E8B-AE1C-202D26AFE2C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{816F12A1-CD68-4734-9FBE-A2BD6C4D6F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{816F12A1-CD68-4734-9FBE-A2BD6C4D6F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{816F12A1-CD68-4734-9FBE-A2BD6C4D6F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{816F12A1-CD68-4734-9FBE-A2BD6C4D6F20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F7FD2CF-367C-4A6A-962B-9F91A0389C22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F7FD2CF-367C-4A6A-962B-9F91A0389C22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F7FD2CF-367C-4A6A-962B-9F91A0389C22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F7FD2CF-367C-4A6A-962B-9F91A0389C22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2656C07C-782E-4B83-B618-A9BE243E5EB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2656C07C-782E-4B83-B618-A9BE243E5EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2656C07C-782E-4B83-B618-A9BE243E5EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2656C07C-782E-4B83-B618-A9BE243E5EB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3001F424-81FB-4CE7-B5D3-5F2B2CA5690B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3001F424-81FB-4CE7-B5D3-5F2B2CA5690B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3001F424-81FB-4CE7-B5D3-5F2B2CA5690B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3001F424-81FB-4CE7-B5D3-5F2B2CA5690B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DE8048E-DC1B-4585-8218-8E50FEDA9128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DE8048E-DC1B-4585-8218-8E50FEDA9128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DE8048E-DC1B-4585-8218-8E50FEDA9128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DE8048E-DC1B-4585-8218-8E50FEDA9128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E8FD25F-591C-4691-AF53-C763E5F4A22A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E8FD25F-591C-4691-AF53-C763E5F4A22A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E8FD25F-591C-4691-AF53-C763E5F4A22A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E8FD25F-591C-4691-AF53-C763E5F4A22A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
