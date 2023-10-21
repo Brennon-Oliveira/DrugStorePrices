@@ -14,7 +14,7 @@ namespace DrugStorePrices.Domain.Services
     public class DrugStoreService : IDrugStoreService
     {
         private readonly IDrugStoreRepository _drugStoreRepository = ServiceLocator.GetService<IDrugStoreRepository>();
-        private readonly IDrugStoreActions _drugStoreActions;
+        private readonly IDrugStoreActions _drugStoreActions = ServiceLocator.GetService<IDrugStoreActions>();
         public DrugStoreService 
         ( )
         {}

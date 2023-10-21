@@ -8,11 +8,10 @@ namespace DrugStorePrices.Domain.Models;
 public class DrugStore : BaseModel
 {
     
-    private readonly IDrugStoreRepository _drugStoreRepository;
+    private readonly IDrugStoreRepository _drugStoreRepository = ServiceLocator.GetService<IDrugStoreRepository>();
 
     public DrugStore()
     {
-        _drugStoreRepository = ServiceLocator.GetService<IDrugStoreRepository>();
         
         if(Id == Guid.Empty || Id == null)
         {
